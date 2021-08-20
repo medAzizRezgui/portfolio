@@ -1,0 +1,360 @@
+@import './Variables.scss';
+
+/*================ Mixins ===================*/
+@mixin xsm {
+    @media (min-width: 420px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
+$columns: 12;
+
+
+.row-cols-auto>* {
+    flex: auto !important;
+}
+
+.row-cols-1>* {
+    flex: 0 0 100% !important;
+}
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        flex: 0 0 100% / $columns * $i;
+    }
+
+    .col-offset-#{$i} {
+        margin-left: 100% / $columns * $i;
+    }
+}
+
+@include sm {
+    @for $i from 1 through $columns {
+        .col-sm-#{$i} {
+            flex: 0 0 100% / $columns * $i;
+        }
+
+        .col-sm-offset-#{$i} {
+            margin-left: 100% / $columns * $i;
+        }
+    }
+
+    // Sets a limited nubmer of columns in a single row
+    @for $i from 1 through $columns {
+        .row-cols-sm-#{$i}>* {
+            flex: 0 0 (100% / #{$i}) !important;
+        }
+    }
+
+    .row-cols-sm-auto>* {
+        flex: auto !important;
+    }
+}
+
+@include md {
+    @for $i from 1 through $columns {
+        .col-md-#{$i} {
+            flex: 0 0 100% / $columns * $i;
+        }
+
+        .col-md-offset-#{$i} {
+            margin-left: 100% / $columns * $i;
+        }
+    }
+
+    // Sets a limited nubmer of columns in a single row
+    @for $i from 1 through $columns {
+        .row-cols-md-#{$i}>* {
+            flex: 0 0 (100% / #{$i}) !important;
+        }
+    }
+
+    .row-cols-md-auto>* {
+        flex: auto !important;
+    }
+}
+
+@include lg {
+    @for $i from 1 through $columns {
+        .col-lg-#{$i} {
+            flex: 0 0 100% / $columns * $i;
+        }
+
+        .col-lg-offset-#{$i} {
+            margin-left: 100% / $columns * $i;
+        }
+    }
+
+    // Sets a limited nubmer of columns in a single row
+    @for $i from 1 through $columns {
+        .row-cols-lg-#{$i}>* {
+            flex: 0 0 (100% / #{$i}) !important;
+        }
+    }
+
+    .row-cols-lg-auto>* {
+        flex: auto !important;
+    }
+}
+
+@include xl {
+    @for $i from 1 through $columns {
+        .col-xl-#{$i} {
+            flex: 0 0 100% / $columns * $i;
+        }
+
+        .col-xl-offset-#{$i} {
+            margin-left: 100% / $columns * $i;
+        }
+    }
+
+    // Sets a limited nubmer of columns in a single row
+    @for $i from 1 through $columns {
+        .row-cols-xl-#{$i}>* {
+            flex: 0 0 (100% / #{$i}) !important;
+        }
+    }
+
+    .row-cols-xl-auto>* {
+        flex: auto !important;
+    }
+}
+
+@include xxl {
+    @for $i from 1 through $columns {
+        .col-xl-#{$i} {
+            flex: 0 0 100% / $columns * $i;
+        }
+
+        .col-xl-offset-#{$i} {
+            margin-left: 100% / $columns * $i;
+        }
+    }
+
+    // Sets a limited nubmer of columns in a single row
+    @for $i from 1 through $columns {
+        .row-cols-xxl-#{$i}>* {
+            flex: 0 0 (100% / #{$i}) !important;
+        }
+    }
+
+    .row-cols-xxl-auto>* {
+        flex: auto !important;
+    }
+}
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: $m-1-5;
+    font-weight: $font-Semi-Bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: $Headline-1;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+}
+
+h2 {
+    font-size: $Headline-2;
+    line-height: 1.25;
+    letter-spacing: -.1rem;
+}
+
+h3 {
+    font-size: $Headline-3;
+    line-height: 1.3;
+    letter-spacing: -.1rem;
+}
+
+h4 {
+    font-size: $Headline-4;
+    line-height: 1.35;
+    letter-spacing: -.08rem;
+}
+
+h5 {
+    font-size: $Paragraph-1;
+    line-height: 1.5;
+    letter-spacing: -.05rem;
+}
+
+h6 {
+    font-size: $Paragraph-2;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+/*==================== BASE ====================*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+
+
+body {
+    font-size: $Body;
+    line-height: 1.6;
+    font-weight: $font-Normal;
+    font-family: $Fira-font;
+    color: $text-color;
+    background-color: $main-bg;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: $m-1;
+}
+
+a {
+    text-decoration: none;
+    color: #1f4fdf;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*================ Layout ==================*/
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    @include sm {
+        max-width: 540px;
+    }
+
+    @include md {
+        max-width: 720px;
+    }
+
+    @include lg {
+        max-width: 960px;
+    }
+
+    @include xl {
+        max-width: 1140px;
+    }
+
+    @include xxl {
+        max-width: 1320px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    min-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*============= Utilities ============== */
+.flex-grow {
+    flex-grow: 1 !important;
+}
+
+
+// use it to stretch a column to be the same height as the rest
+.stretch {
+    display: inline-grid;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+/*================ Buttons ===============*/
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+
+    padding: 15px 30px;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
