@@ -1,16 +1,69 @@
 import React from 'react'
 import Logo from '../../assets/Rez..svg'
+import Item from '../Scroll Reveal Item/Item'
 import './NavigationBar.scss'
 function NavigationBar() {
     return (
         <nav className="navBar">
             <div className="container navBar__container">
-                <img src={Logo} alt="" className="navBar__logo" />
+                <Item
+                    origin={'left'}
+                    duration={1000}
+                    delay={200}
+                    distance={'500px'}
+                    scale={1}
+                    interval={0}
+                    easing={'ease'}
+                >
+                    <img src={Logo} alt="" className="navBar__logo" />
+                </Item>
+
                 <ul className="navBar__list">
-                    <ul className="navBar__link">About</ul>
-                    <ul className="navBar__link">Skills</ul>
-                    <ul className="navBar__link">Projects</ul>
-                    <ul className="navBar__link">Contact</ul>
+
+                    <Item
+                        origin={'top'}
+                        duration={1000}
+                        delay={500}
+                        distance={'500px'}
+                        scale={1}
+                        interval={0}
+                        easing={'ease'}
+                    >
+                        <ul className="navBar__link">About</ul>
+                    </Item>
+                    <Item
+                        origin={'top'}
+                        duration={1000}
+                        delay={700}
+                        distance={'500px'}
+                        scale={1}
+                        interval={0}
+                        easing={'ease'}
+                    >
+                        <ul className="navBar__link">Skills</ul>
+                    </Item>
+                    <Item
+                        origin={'top'}
+                        duration={1000}
+                        delay={900}
+                        distance={'500px'}
+                        scale={1}
+                        interval={0}
+                        easing={'ease'}
+                    >
+                        <ul className="navBar__link">Projects</ul>
+                    </Item>
+                    <Item
+                        origin={'top'}
+                        duration={1000}
+                        delay={1100}
+                        distance={'500px'}
+                        scale={1}
+                        interval={0}
+                        easing={'ease'}
+                    >
+                        <ul className="navBar__link">Contact</ul>
+                    </Item>
                 </ul>
             </div>
         </nav>

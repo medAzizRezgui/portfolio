@@ -1,1 +1,159 @@
 @import '../../styles/Variables.scss';
+
+
+
+.home__container {
+    text-align: left;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0 5rem !important;
+
+
+    .a {
+        width: 600px;
+        height: 400px;
+        animation: img 1s infinite;
+        position: absolute;
+        z-index: -1;
+        right: -5rem;
+
+    }
+
+    .home__text {
+
+        .home__buttons {
+
+            margin-top: 3rem;
+
+            .contact__btn,
+            .explore__btn {
+                color: $main-cyan;
+                font-family: $Fira-font;
+                background-color: #ffffff17;
+                border: 3px solid #66FCF1;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px #087BFF;
+                height: 50px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 20px #087BFF;
+
+                }
+
+            }
+
+
+
+            .contact__btn {
+                margin-right: 3rem;
+
+            }
+
+            .explore__btn {
+                display: inline-flex;
+                align-content: center;
+                justify-content: space-between;
+
+
+                img {
+                    transform: scale(2);
+                    animation: scroll 1s infinite 8s;
+                }
+            }
+        }
+
+
+
+
+        padding-left: 5rem;
+
+        &__small {
+            color: $main-cyan;
+            margin: 0;
+        }
+
+        &__title {
+            text-align: left;
+            font-family: $Poppins-font;
+            margin-bottom: 2rem;
+
+            animation: title 2s infinite;
+
+            span {
+                color: $main-cyan;
+            }
+        }
+
+        &__subtitle {
+            font-size: 6rem;
+            font-weight: bold;
+            font-family: $Poppins-font;
+            width: 65%;
+            color: $text-color;
+            line-height: 1.1;
+        }
+
+        &__desc {
+            width: 60%;
+            line-height: 1.8;
+            padding: 2rem 0;
+
+            span {
+                color: $main-cyan;
+
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(-3px) scale(2);
+    }
+
+    50% {
+
+        transform: translateY(3px) scale(2);
+
+    }
+
+    100% {
+        transform: translateY(-3px)scale(2);
+    }
+}
+
+@keyframes img {
+    0% {
+        transform: translateY(-3px);
+    }
+
+    50% {
+
+        transform: translateY(3px);
+
+    }
+
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+
+@keyframes title {
+    0% {
+        text-shadow: 0px 0px 8px #00FFF8;
+    }
+
+    50% {
+
+        text-shadow: 0px 0px 1px #00FFF8;
+
+    }
+
+    100% {
+        text-shadow: 0px 0px 8px #00FFF8;
+    }
+}
