@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="96" viewBox="0 0 113 96">
+  <defs>
+    <filter id="Rez." x="0" y="0" width="113" height="96" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.702"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rez.)">
+    <text id="Rez.-2" data-name="Rez." transform="translate(0 68)" fill="#66fcf1" font-size="50" font-family="VeganStylePersonalUse, Vegan Style Personal Use" letter-spacing="0.1em"><tspan x="0" y="0">Rez</tspan><tspan y="0" fill="#fff" font-family="SegoeUI, Segoe UI">.</tspan></text>
+  </g>
+</svg>
