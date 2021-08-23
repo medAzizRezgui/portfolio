@@ -1,0 +1,45 @@
+@import '../../styles/Variables.scss';
+
+.EmailBar__container {
+    position: fixed;
+    bottom: 0;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 5px;
+    opacity: 0;
+    animation: slide-in 1s ease 5s forwards;
+
+    .bar__email {
+        letter-spacing: 0.5px;
+        transform: rotate(90deg) translateX(-90px);
+        color: $text-color;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $main-cyan;
+            transform: rotate(90deg) translateX(-95px);
+        }
+
+    }
+
+    .bar {
+        width: 5px;
+        height: 100px;
+        background-color: $text-color;
+        border-radius: 10px;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

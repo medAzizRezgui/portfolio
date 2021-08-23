@@ -1,0 +1,44 @@
+@import '../../styles/Variables.scss';
+
+.socialBar__container {
+    position: fixed;
+    bottom: 0;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    animation: slide-in 1s ease 5s forwards;
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        svg {
+            width: 25px !important;
+            fill: $text-color;
+            object-fit: cover;
+            transition: all 0.3s ease;
+
+            &:hover {
+                fill: $main-cyan;
+                transform: translateY(-5px);
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+    .bar {
+        width: 5px;
+        height: 100px;
+        background-color: $text-color;
+        border-radius: 10px;
+    }
+}

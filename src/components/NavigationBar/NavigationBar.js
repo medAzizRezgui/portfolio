@@ -29,7 +29,7 @@ function NavigationBar() {
                         interval={0}
                         easing={'ease'}
                     >
-                        <ul className="navBar__link">About</ul>
+                        <ul className="navBar__link"><a href="#about">About</a></ul>
                     </Item>
                     <Item
                         origin={'top'}

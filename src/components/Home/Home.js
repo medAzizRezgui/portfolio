@@ -12,7 +12,7 @@ function Home() {
 
 
 
-        <div className="container home__container">
+        <div id='home' className="container home__container">
             <Item
                 origin={'top'}
                 duration={1000}
@@ -22,7 +22,7 @@ function Home() {
 
                 easing={'ease'}
             >
-                <SectionBar active={true} />
+                <SectionBar active1={true} />
             </Item>
 
             <div className="home__text">
@@ -103,7 +103,7 @@ function Home() {
 
 
                         </button>
-                        <button className="explore__btn">Explore
+                        <button className="explore__btn"><a href="#about">Explore</a>
                             <img src={ScrollIcon} alt="" />
                         </button>
                     </div>
