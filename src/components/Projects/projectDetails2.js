@@ -19,9 +19,19 @@ function ProjectDetails2() {
                     A Recreation of a landing page template
                 </h1>
                 <div className="cta">
-                    <img src={live} alt="" />
-                    <img src={temp} alt="" />
-                    <img src={src} alt="" />
+                    <a href="https://huddle-rez.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <img src={live} alt="" />
+                    </a>
+
+                    <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2" target="_blank" rel="noopener noreferrer">
+                        <img src={temp} alt="" />
+                    </a>
+
+                    <a href="https://github.com/medAzizRezgui/huddle" target="_blank" rel="noopener noreferrer">
+
+                        <img src={src} alt="" />
+
+                    </a>
                 </div>
             </div>
         </div>

@@ -49,9 +49,23 @@ function Projects() {
 
                                 </h1>
                                 <div className="cta">
-                                    <img src={live} alt="" />
-                                    <img src={temp} alt="" />
-                                    <img src={src} alt="" />
+
+                                    <a href="https://fylo-rez.netlify.app" target="_blank" rel="noopener noreferrer">                                    <img src={live} alt="" />
+                                    </a>
+
+                                    <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd" target="_blank" rel="noopener noreferrer">                                    <img src={temp} alt="" />
+                                    </a>
+
+                                    <a href="https://github.com/medAzizRezgui/fylo" target="_blank" rel="noopener noreferrer">
+                                        <img src={src} alt="" />
+
+                                    </a>
+
+
+
+
+
+
                                 </div>
                             </div>
                         </div>

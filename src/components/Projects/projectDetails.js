@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import live from '../../assets/live.png'
 import src from '../../assets/src.png'
-import temp from '../../assets/temp.png'
 import grid from '../../assets/grid.png'
 function ProjectDetails() {
     const [show, setShow] = useState(false);
@@ -22,9 +21,18 @@ function ProjectDetails() {
                     page.
                 </h1>
                 <div className="cta">
-                    <img src={live} alt="" />
-                    <img src={temp} alt="" />
-                    <img src={src} alt="" />
+
+
+                    <a href="https://grid-rez.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <img src={live} alt="" />
+
+                    </a>
+
+
+                    <a href="https://github.com/medAzizRezgui/grid" target="_blank" rel="noopener noreferrer">
+                        <img src={src} alt="" />
+
+                    </a>
                 </div>
             </div>
         </div>

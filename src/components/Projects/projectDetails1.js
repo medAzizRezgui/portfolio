@@ -16,12 +16,24 @@ function ProjectDetails1() {
 
                 className="project__info">
                 <h1 className="project__info-text">
-                    A Recreation of shopify E-commerce template
+                    A mobile first E-commerce website
                 </h1>
                 <div className="cta">
-                    <img src={live} alt="" />
-                    <img src={temp} alt="" />
-                    <img src={src} alt="" />
+                    <a href="https://snow-devil-rez.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <img src={live} alt="" />
+
+
+                    </a>
+                    <a href="https://venture-theme-snowboards.myshopify.com/" target="_blank" rel="noopener noreferrer">
+
+                        <img src={temp} alt="" />
+
+                    </a>
+
+                    <a href="https://github.com/medAzizRezgui/snowdevil" target="_blank" rel="noopener noreferrer">
+                        <img src={src} alt="" />
+
+                    </a>
                 </div>
             </div>
         </div>
