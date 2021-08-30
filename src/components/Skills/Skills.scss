@@ -67,7 +67,6 @@
 
             .skills__title {
                 font-size: 5rem;
-
                 cursor: pointer;
                 text-align: left;
                 font-family: $Poppins-font;
@@ -90,6 +89,32 @@
             }
         }
 
+        .services__container {
+            width: 100%;
+            padding-left: 5rem;
+
+            .servicesRow {
+                height: 220px;
+                width: 100%;
+
+                .servicesCol {
+                    .service__card {
+                        height: 200px;
+                        background-color: $card-bg;
+                        border-radius: 5px;
+                        padding: 1rem 3rem;
+                        margin: 0 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &__item {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
 
         .skills__cards {
             width: 100%;
@@ -250,7 +275,7 @@
     }
 
     100% {
-        opacity: 0.5;
+
         visibility: visible;
     }
 }

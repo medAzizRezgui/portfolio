@@ -57,7 +57,7 @@ function Home() {
 
                     easing={'ease'}
                 >
-                    <div className="home__text__subtitle">I build and design stuff for the web</div>
+                    <div className="home__text__subtitle">I build and design stuff for the web and mobile</div>
                 </Item>
                 <Item
                     origin={'left'}
@@ -69,12 +69,12 @@ function Home() {
                     easing={'ease'}
                 >
                     <p className="home__text__desc">
-                        I am a freelance web developer, I build and
+                        I am a freelance web and mobile developer, I build and
 
 
                         design <span>
                             fast and aesthetic
-                        </span>  websites while focusing
+                        </span>  web apps while focusing
                         on  <span>
                             delivering the most value
 

@@ -1,0 +1,188 @@
+@import '../../styles/Variables.scss';
+
+.projects__container {
+    text-align: left;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0 5rem !important;
+    margin-bottom: 10rem !important;
+    margin-top: 20rem !important;
+    position: relative;
+
+    .projects {
+        padding: 0 5rem !important;
+
+        .projects__title {
+            font-size: 5rem;
+            cursor: pointer;
+            text-align: left;
+            font-family: $Poppins-font;
+        }
+
+        .prow {
+            width: 100%;
+
+            .pcol-1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+
+                .project__info {
+                    position: absolute;
+                    top: 0;
+
+                    background-color: #028090bd;
+                    height: 100%;
+                    width: 350px;
+                    border-radius: 10px;
+                    padding: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    animation: h 0.2s ease-in-out;
+
+                    &-text {
+                        opacity: 1 !important;
+                        font-size: 20px;
+                        text-align: center;
+                        font-weight: 500;
+                        line-height: 1.9;
+                        margin-bottom: 3rem;
+                    }
+
+                    .cta {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        img {
+                            transition: all 0.3s;
+                            cursor: pointer;
+
+                            &:hover {
+                                transform: translateY(-5px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pcol-2 {
+
+
+                .prow2 {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    padding: 0 1rem;
+                    position: relative;
+
+                    .project__info {
+                        position: absolute;
+                        top: 0;
+                        background-color: #028090dc;
+                        height: 100%;
+                        width: 98%;
+                        border-radius: 20px;
+                        padding: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        animation: h 0.2s ease-in-out;
+
+                        &-text {
+                            opacity: 1 !important;
+                            font-size: 20px;
+                            text-align: center;
+                            font-weight: 500;
+                            line-height: 1.9;
+                            margin-bottom: 3rem;
+                        }
+
+                        .cta {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            img {
+                                transition: all 0.3s;
+                                cursor: pointer;
+
+                                &:hover {
+                                    transform: translateY(-5px);
+                                }
+                            }
+                        }
+                    }
+
+                    .prowcol {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 1rem;
+                        margin-bottom: 5rem;
+                        position: relative;
+
+                        .project__info {
+                            position: absolute;
+                            top: 0;
+                            background-color: #028090dc;
+                            height: 100%;
+                            width: 330px;
+                            border-radius: 20px;
+                            padding: 2rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            animation: h 0.2s ease-in-out;
+
+                            &-text {
+                                opacity: 1 !important;
+                                font-size: 20px;
+                                text-align: center;
+                                font-weight: 500;
+                                line-height: 1.9;
+                                margin-bottom: 3rem;
+                            }
+
+                            .cta {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                width: 100%;
+
+                                img {
+                                    transition: all 0.3s;
+
+                                    &:hover {
+                                        transform: translateY(-5px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes h {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

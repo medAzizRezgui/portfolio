@@ -14,10 +14,13 @@ import next from '../../assets/icons/next.svg'
 import three from '../../assets/icons/three.svg'
 import redux from '../../assets/icons/redux.svg'
 import firebase from '../../assets/icons/firebase.svg'
-import sass from '../../assets/icons/sass.svg'
+import site from '../../assets/site.svg'
 import box from '../../assets/mystery.png'
 import lock from '../../assets/lock.gif'
 import cor from '../../assets/cor.svg'
+import seo from '../../assets/seo.svg'
+import ux from '../../assets/ux.svg'
+import res from '../../assets/res.svg'
 import './Skills.scss'
 function Skills() {
     const [servSection, setServSection] = useState(false);
@@ -35,6 +38,8 @@ function Skills() {
 
         serv = <h1
             onClick={() => setServSection(true)}
+            style={{ opacity: !servSection ? '0.3' : "1" }}
+
             className="skills__services">Services</h1>
     }
     else {
@@ -71,6 +76,7 @@ function Skills() {
                         >
 
                             <h1
+                                style={{ opacity: servSection ? '0.3' : "1" }}
                                 onClick={() => setServSection(false)}
                                 className="skills__title">Technical skills</h1>
                         </Item>
@@ -91,7 +97,56 @@ function Skills() {
                     <div
                         style={{ display: !servSection ? 'none' : '' }}
                         className="services__container">
-                        <h1>Hello!</h1>
+
+                        <div className="row servicesRow">
+                            <div className="col-6 servicesCol">
+
+                                <div className="service__card">
+                                    <div className="service__card__item">
+                                        <img src={seo} alt="" className="service__image" />
+                                        <p className="service__text">
+                                            Search Engine Optimization
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="col-6 servicesCol">
+
+                                <div className="service__card">
+                                    <div className="service__card__item">
+                                        <img src={site} alt="" className="service__image" />
+                                        <p className="service__text">
+                                            Decent and fast web apps
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row servicesRow">
+                            <div className="col-6 servicesCol">
+
+                                <div className="service__card">
+                                    <div className="service__card__item">
+                                        <img src={ux} alt="" className="service__image" />
+                                        <p className="service__text">
+                                            Interactive Elements
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-6 servicesCol">
+
+                                <div className="service__card">
+                                    <div className="service__card__item">
+                                        <img src={res} alt="" className="service__image" />
+                                        <p className="service__text">
+                                            Fully responsive design
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div
 
@@ -369,8 +424,8 @@ function Skills() {
                                                 scale={1}
                                                 easing={'ease'}
                                             ><SkillsItem
-                                                    subtitle='Sass'
-                                                    img={sass}
+                                                    subtitle='React Native'
+                                                    img={react}
                                                 />
 
                                             </Item>

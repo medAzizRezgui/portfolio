@@ -5,6 +5,7 @@ import SocialBar from './components/SocialsBar/SocialBar';
 import EmailBar from './components/EmailBar/EmailBar';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <EmailBar />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }
