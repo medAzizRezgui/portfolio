@@ -14,9 +14,13 @@
         align-content: center;
         justify-content: flex-start;
         padding: 0 5rem !important;
-        padding-top: 5em !important;
+        padding-top: 5rem !important;
         padding-bottom: 10rem !important;
 
+        @include xxl {
+            padding-top: 2rem !important;
+
+        }
 
         .a {
             width: 600px;
@@ -25,6 +29,12 @@
             position: absolute;
             z-index: -1;
             right: -10rem;
+
+            @include xxl {
+                width: 550px;
+                height: 350px;
+            }
+
 
         }
 
@@ -44,6 +54,10 @@
                     box-shadow: 0px 0px 10px #087BFF;
                     height: 50px;
                     transition: all 0.3s ease;
+
+                    @include xxl {
+                        font-size: 14px !important;
+                    }
 
                     &:hover {
                         transform: scale(1.1);
@@ -87,6 +101,13 @@
                 text-align: left;
                 font-family: $Poppins-font;
 
+                @include xxl {
+                    font-size: $Headline-2;
+                }
+
+                @include xl {
+                    font-size: $Headline-3;
+                }
 
                 animation: title 2s infinite;
 
@@ -102,12 +123,26 @@
                 width: 65%;
                 color: $text-color;
                 line-height: 1.1;
+
+                @include xxl {
+                    font-size: $Headline-3;
+                }
+
+                @include xl {
+                    font-size: $Headline-4;
+                    width: 50%;
+                }
+
             }
 
             &__desc {
                 width: 60%;
                 line-height: 1.8;
                 padding: 2rem 0;
+
+                @include xxl {
+                    font-size: $Body
+                }
 
                 span {
                     color: $main-cyan;

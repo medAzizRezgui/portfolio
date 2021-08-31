@@ -8,12 +8,24 @@
     gap: 15px;
     width: 70px;
 
+    @include xl {
+        width: 50px;
+    }
+
     img {
         width: 60px;
+
+        @include xl {
+            width: 40px;
+        }
     }
 
     .item__sub {
         font-size: 14px;
         text-align: center;
+
+        @include xl {
+            font-size: 12px;
+        }
     }
 }

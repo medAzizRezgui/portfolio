@@ -35,10 +35,18 @@
                 &__subtitle {
                     font-family: $Poppins-font;
                     text-align: left;
+
+                    @include xxl {
+                        font-size: $Headline-3;
+                    }
                 }
 
                 &__desc {
                     width: 60%;
+
+                    @include xxl {
+                        font-size: $Body;
+                    }
 
                     span {
                         color: $main-cyan;
@@ -52,6 +60,11 @@
                 left: -30rem;
                 transition: all 0.3s ease;
                 top: -5rem;
+
+                @include xl {
+                    width: 250px;
+                    left: -20rem;
+                }
 
 
                 &:hover {

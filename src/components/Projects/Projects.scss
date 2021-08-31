@@ -46,6 +46,14 @@
                     flex-direction: column;
                     animation: h 0.2s ease-in-out;
 
+                    @include xxl {
+                        width: 300px;
+                    }
+
+                    @include xl {
+                        width: 240px;
+                    }
+
                     &-text {
                         opacity: 1 !important;
                         font-size: 20px;
@@ -53,6 +61,10 @@
                         font-weight: 500;
                         line-height: 1.9;
                         margin-bottom: 3rem;
+
+                        @include xxl {
+                            font-size: $Body;
+                        }
                     }
 
                     .cta {
@@ -64,6 +76,9 @@
                         img {
                             transition: all 0.3s;
                             cursor: pointer;
+
+
+
 
                             &:hover {
                                 transform: translateY(-5px);
@@ -137,13 +152,21 @@
                             background-color: #028090dc;
                             height: 100%;
                             width: 330px;
-                            border-radius: 20px;
+                            border-radius: 15px;
                             padding: 2rem;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             flex-direction: column;
                             animation: h 0.2s ease-in-out;
+
+                            @include xxl {
+                                width: 270px;
+                            }
+
+                            @include xl {
+                                width: 210px;
+                            }
 
                             &-text {
                                 opacity: 1 !important;
@@ -152,6 +175,10 @@
                                 font-weight: 500;
                                 line-height: 1.9;
                                 margin-bottom: 3rem;
+
+                                @include xxl {
+                                    font-size: $Body;
+                                }
                             }
 
                             .cta {

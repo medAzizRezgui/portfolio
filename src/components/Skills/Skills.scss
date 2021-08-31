@@ -77,6 +77,10 @@
                     cursor: pointer;
                     text-align: left;
                     font-family: $Poppins-font;
+
+                    @include xl {
+                        font-size: $Headline-4 !important;
+                    }
                 }
 
                 .skills__services {
@@ -87,6 +91,10 @@
                     opacity: 0;
                     visibility: hidden;
                     animation: serv 1s ease forwards 3s;
+
+                    @include xl {
+                        font-size: $Headline-4 !important;
+                    }
                 }
 
                 .box {

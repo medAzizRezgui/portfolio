@@ -12,6 +12,10 @@
     opacity: 0;
     animation: slide-in 1s ease 5s forwards;
 
+    @include lg {
+        display: none;
+    }
+
     .socials {
         display: flex;
         flex-direction: column;
