@@ -50,8 +50,10 @@ function Skills() {
     }
 
     return (
-        <>
+        <div className='final'>
             {modal}
+
+
             <div id="skills" className="container skills__container">
                 <Item
                     origin={'top'}
@@ -466,7 +468,7 @@ function Skills() {
                 </Item>
 
             </div>
-        </>
+        </div>
     )
 }
 

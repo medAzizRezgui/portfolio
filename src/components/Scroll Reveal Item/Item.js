@@ -10,6 +10,7 @@ export class RevealMe extends React.Component {
             distance: this.props.distance,
             scale: this.props.scale,
             easing: this.props.easing,
+            reset: this.props.reset,
         }
         sr.reveal(this.refs.box1, config)
     }

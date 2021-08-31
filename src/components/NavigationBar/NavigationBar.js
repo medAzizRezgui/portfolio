@@ -40,7 +40,7 @@ function NavigationBar() {
                         interval={0}
                         easing={'ease'}
                     >
-                        <ul className="navBar__link">Skills</ul>
+                        <ul className="navBar__link"><a href="#skills">Skills</a></ul>
                     </Item>
                     <Item
                         origin={'top'}
@@ -51,7 +51,7 @@ function NavigationBar() {
                         interval={0}
                         easing={'ease'}
                     >
-                        <ul className="navBar__link">Projects</ul>
+                        <ul className="navBar__link"><a href="#projects">Projects</a></ul>
                     </Item>
                     <Item
                         origin={'top'}
@@ -62,7 +62,7 @@ function NavigationBar() {
                         interval={0}
                         easing={'ease'}
                     >
-                        <ul className="navBar__link">Contact</ul>
+                        <ul className="navBar__link"><a href="#contact">Contact</a></ul>
                     </Item>
                 </ul>
             </div>

@@ -2,9 +2,14 @@ import React, { useState } from 'react'
 import live from '../../assets/live.png'
 import src from '../../assets/src.png'
 import grid from '../../assets/grid.png'
+
+
 function ProjectDetails() {
     const [show, setShow] = useState(false);
     return (
+
+
+
         <div
             onMouseEnter={() => setShow(true)}
             onMouseLeave={() => setShow(false)}
@@ -36,6 +41,8 @@ function ProjectDetails() {
                 </div>
             </div>
         </div>
+
+
     )
 }
 

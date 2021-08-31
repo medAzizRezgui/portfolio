@@ -2,6 +2,12 @@ import React from 'react'
 import './SectionBar.scss'
 import SectionBarItem from './SectionBarItem/SectionBarItem'
 function SectionBar(props) {
+
+
+
+
+
+
     return (
         <div className="sectionBar">
             <div className="items__container">
@@ -16,16 +22,26 @@ function SectionBar(props) {
                         active={props.active2}
                         text={'About'} />
                 </a>
+                <a href="#skills">
+                    <SectionBarItem
+                        active={props.active3}
+                        text={'Skills'} />
+                </a>
 
-                <SectionBarItem
-                    active={props.active3}
-                    text={'Skills'} />
-                <SectionBarItem
-                    active={props.active4}
-                    text={'Projects'} />
-                <SectionBarItem
-                    active={props.active5}
-                    text={'Contact'} />
+                <a href="#projects">
+
+                    <SectionBarItem
+                        active={props.active4}
+                        text={'Projects'} />
+                </a>
+
+                <a href="#contact">
+
+                    <SectionBarItem
+                        active={props.active5}
+                        text={'Contact'} />
+                </a>
+
             </div>
 
             <div className="bar"></div>

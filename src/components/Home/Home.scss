@@ -1,111 +1,118 @@
 @import '../../styles/Variables.scss';
 
 
-
-.home__container {
-    text-align: left;
+.final {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    align-content: center;
-    justify-content: flex-start;
-    padding: 0 5rem !important;
-    margin-top: 5rem !important;
-    margin-bottom: 20rem !important;
+    align-items: center;
+    justify-content: center;
+
+    .home__container {
+        text-align: left;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        padding: 0 5rem !important;
+        padding-top: 5em !important;
+        padding-bottom: 10rem !important;
 
 
-    .a {
-        width: 600px;
-        height: 400px;
-        animation: img 1s infinite;
-        position: absolute;
-        z-index: -1;
-        right: -10rem;
+        .a {
+            width: 600px;
+            height: 400px;
+            animation: img 1s infinite;
+            position: absolute;
+            z-index: -1;
+            right: -10rem;
 
-    }
+        }
 
-    .home__text {
+        .home__text {
 
-        .home__buttons {
+            .home__buttons {
 
-            margin-top: 3rem;
+                margin-top: 3rem;
 
-            .contact__btn,
-            .explore__btn {
-                color: $main-cyan;
-                font-family: $Fira-font;
-                background-color: #ffffff17;
-                border: 3px solid #66FCF1;
-                border-radius: 5px;
-                box-shadow: 0px 0px 10px #087BFF;
-                height: 50px;
-                transition: all 0.3s ease;
+                .contact__btn,
+                .explore__btn {
+                    color: $main-cyan !important;
+                    font-family: $Fira-font;
+                    background-color: #ffffff17;
+                    border: 3px solid #66FCF1;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px #087BFF;
+                    height: 50px;
+                    transition: all 0.3s ease;
 
-                &:hover {
-                    transform: scale(1.1);
-                    box-shadow: 0px 0px 20px #087BFF;
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: 0px 0px 20px #087BFF;
+
+                    }
 
                 }
 
-            }
 
 
+                .contact__btn {
+                    margin-right: 3rem;
 
-            .contact__btn {
-                margin-right: 3rem;
+                }
 
-            }
-
-            .explore__btn {
-                display: inline-flex;
-                align-content: center;
-                justify-content: space-between;
+                .explore__btn {
+                    display: inline-flex;
+                    align-content: center;
+                    justify-content: space-between;
 
 
-                img {
-                    transform: scale(2);
-                    animation: scroll 1s infinite 8s;
+                    img {
+                        transform: scale(2);
+                        animation: scroll 1s infinite 8s;
+                    }
                 }
             }
-        }
 
 
 
 
-        padding-left: 5rem;
+            padding-left: 5rem;
 
-        &__small {
-            color: $main-cyan;
-            margin: 0;
-        }
-
-        &__title {
-            text-align: left;
-            font-family: $Poppins-font;
-
-
-            animation: title 2s infinite;
-
-            span {
+            &__small {
                 color: $main-cyan;
+                margin: 0;
             }
-        }
 
-        &__subtitle {
-            font-size: 6rem;
-            font-weight: bold;
-            font-family: $Poppins-font;
-            width: 65%;
-            color: $text-color;
-            line-height: 1.1;
-        }
+            &__title {
+                text-align: left;
+                font-family: $Poppins-font;
 
-        &__desc {
-            width: 60%;
-            line-height: 1.8;
-            padding: 2rem 0;
 
-            span {
-                color: $main-cyan;
+                animation: title 2s infinite;
 
+                span {
+                    color: $main-cyan;
+                }
+            }
+
+            &__subtitle {
+                font-size: 6rem;
+                font-weight: bold;
+                font-family: $Poppins-font;
+                width: 65%;
+                color: $text-color;
+                line-height: 1.1;
+            }
+
+            &__desc {
+                width: 60%;
+                line-height: 1.8;
+                padding: 2rem 0;
+
+                span {
+                    color: $main-cyan;
+
+                }
             }
         }
     }

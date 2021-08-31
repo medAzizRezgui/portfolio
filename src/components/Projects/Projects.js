@@ -13,11 +13,11 @@ function Projects() {
     const [show, setShow] = useState(false);
 
     return (
-        <div className="container projects__container">
+        <div id='projects' className="container projects__container">
             <Item
                 origin={'top'}
                 duration={1000}
-                delay={3600}
+                delay={200}
                 distance={'500px'}
                 scale={1}
                 easing={'ease'}
@@ -29,6 +29,7 @@ function Projects() {
                     Projects
                 </h1>
                 <div className="row prow">
+
                     <ProjectDetails />
                     <div className="col-8 pcol-2">
                         <div className="row prow2">

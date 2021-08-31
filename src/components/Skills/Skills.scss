@@ -1,247 +1,255 @@
 @import '../../styles/Variables.scss';
 
-.skills__modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 500;
-    height: 100vh;
+.final {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.336);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    animation: modal__pop 3s ease-in-out;
 
-    .skill__modal__box {
-        height: 300px;
-        width: 300px;
-        background-color: #8077E7;
-        border-radius: 10px;
-        position: relative;
+    .skills__modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 500;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.336);
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        animation: modal__pop 3s ease-in-out;
 
-        img {
-            border-radius: 5px;
-            ;
-        }
-
-        p {
-            color: white;
-            position: absolute;
-            bottom: 2rem;
-        }
-    }
-}
-
-.skills__container {
-    text-align: left;
-    display: flex;
-    align-content: center;
-    justify-content: flex-start;
-    padding: 0 5rem !important;
-    margin-bottom: 10rem !important;
-    margin-top: 20rem !important;
-    position: relative;
-
-    .cor {
-        position: absolute;
-        right: -3rem;
-        bottom: -5rem;
-    }
-
-    .skills__content {
-        width: 100%;
-
-        .skills__heading {
-            padding-left: 5rem;
+        .skill__modal__box {
+            height: 300px;
+            width: 300px;
+            background-color: #8077E7;
+            border-radius: 10px;
+            position: relative;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 350px;
-            width: 100%;
+            justify-content: center;
 
-            .skills__title {
-                font-size: 5rem;
-                cursor: pointer;
-                text-align: left;
-                font-family: $Poppins-font;
+            img {
+                border-radius: 5px;
+                ;
             }
 
-            .skills__services {
-                cursor: pointer;
-                font-size: 5rem;
-                text-align: left;
-                font-family: $Poppins-font;
-                opacity: 0;
-                visibility: hidden;
-                animation: serv 1s ease forwards 3s;
-            }
-
-            .box {
-                width: 50px;
-                height: 50px;
-                animation: img 1s infinite;
-            }
-        }
-
-        .services__container {
-            width: 100%;
-            padding-left: 5rem;
-
-            .servicesRow {
-                height: 220px;
-                width: 100%;
-
-                .servicesCol {
-                    .service__card {
-                        height: 200px;
-                        background-color: $card-bg;
-                        border-radius: 5px;
-                        padding: 1rem 3rem;
-                        margin: 0 1rem;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        &__item {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-
-        .skills__cards {
-            width: 100%;
-            padding-left: 5rem;
-
-            .first-row {
-                height: 220px;
-                width: 100%;
-
-                .langs {
-                    .lang {
-                        height: 200px;
-                        background-color: $card-bg;
-                        border-radius: 5px;
-                        margin: 0 1rem;
-                        padding: 1rem 3rem;
-
-                        .subtitle {
-                            font-weight: 600;
-                            font-size: $Paragraph-2;
-
-                            span {
-                                color: $tags-red;
-                            }
-                        }
-
-                        .icons {
-                            height: 150px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                        }
-
-                    }
-
-                }
-
-
-                .design {
-                    .ds {
-                        height: 200px;
-                        background-color: $card-bg;
-                        border-radius: 5px;
-                        margin: 0 1rem;
-                        padding: 1rem 3rem;
-
-                        .subtitle {
-                            font-weight: 600;
-                            font-size: $Paragraph-2;
-
-                            span {
-                                color: $tags-red;
-                            }
-                        }
-
-                        .icons {
-                            height: 150px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                        }
-
-                    }
-                }
-
-                .tools {
-                    .tool {
-                        height: 200px;
-                        background-color: $card-bg;
-                        border-radius: 5px;
-                        margin: 0 1rem;
-                        padding: 1rem 3rem;
-
-                        .subtitle {
-                            font-weight: 600;
-                            font-size: $Paragraph-2;
-
-                            span {
-                                color: $tags-red;
-                            }
-                        }
-
-                        .icons {
-                            height: 150px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                        }
-
-                    }
-                }
-            }
-
-            .second-row {
-                height: 220px;
-                width: 100%;
-
-                .tech {
-                    .tek {
-                        height: 200px;
-                        background-color: $card-bg;
-                        border-radius: 5px;
-                        margin: 0 1rem;
-                        padding: 1rem 3rem;
-
-                        .subtitle {
-                            font-weight: 600;
-                            font-size: $Paragraph-2;
-
-                            span {
-                                color: $tags-red;
-                            }
-                        }
-
-                        .icons {
-                            height: 150px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                        }
-
-                    }
-                }
+            p {
+                color: white;
+                position: absolute;
+                bottom: 2rem;
             }
         }
     }
 
+    .skills__container {
+        text-align: left;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        padding: 0 5rem !important;
+        padding-top: 10rem !important;
+
+        position: relative;
+
+        .cor {
+            position: absolute;
+            right: -3rem;
+            bottom: -5rem;
+        }
+
+        .skills__content {
+            width: 100%;
+
+            .skills__heading {
+                padding-left: 5rem;
+                display: flex;
+                align-items: center;
+                gap: 350px;
+                width: 100%;
+
+                .skills__title {
+                    font-size: 5rem;
+                    cursor: pointer;
+                    text-align: left;
+                    font-family: $Poppins-font;
+                }
+
+                .skills__services {
+                    cursor: pointer;
+                    font-size: 5rem;
+                    text-align: left;
+                    font-family: $Poppins-font;
+                    opacity: 0;
+                    visibility: hidden;
+                    animation: serv 1s ease forwards 3s;
+                }
+
+                .box {
+                    width: 50px;
+                    height: 50px;
+                    animation: img 1s infinite;
+                }
+            }
+
+            .services__container {
+                width: 100%;
+                padding-left: 5rem;
+
+                .servicesRow {
+                    height: 220px;
+                    width: 100%;
+
+                    .servicesCol {
+                        .service__card {
+                            height: 200px;
+                            background-color: $card-bg;
+                            border-radius: 5px;
+                            padding: 1rem 3rem;
+                            margin: 0 1rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &__item {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .skills__cards {
+                width: 100%;
+                padding-left: 5rem;
+
+                .first-row {
+                    height: 220px;
+                    width: 100%;
+
+                    .langs {
+                        .lang {
+                            height: 200px;
+                            background-color: $card-bg;
+                            border-radius: 5px;
+                            margin: 0 1rem;
+                            padding: 1rem 3rem;
+
+                            .subtitle {
+                                font-weight: 600;
+                                font-size: $Paragraph-2;
+
+                                span {
+                                    color: $tags-red;
+                                }
+                            }
+
+                            .icons {
+                                height: 150px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                        }
+
+                    }
+
+
+                    .design {
+                        .ds {
+                            height: 200px;
+                            background-color: $card-bg;
+                            border-radius: 5px;
+                            margin: 0 1rem;
+                            padding: 1rem 3rem;
+
+                            .subtitle {
+                                font-weight: 600;
+                                font-size: $Paragraph-2;
+
+                                span {
+                                    color: $tags-red;
+                                }
+                            }
+
+                            .icons {
+                                height: 150px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                        }
+                    }
+
+                    .tools {
+                        .tool {
+                            height: 200px;
+                            background-color: $card-bg;
+                            border-radius: 5px;
+                            margin: 0 1rem;
+                            padding: 1rem 3rem;
+
+                            .subtitle {
+                                font-weight: 600;
+                                font-size: $Paragraph-2;
+
+                                span {
+                                    color: $tags-red;
+                                }
+                            }
+
+                            .icons {
+                                height: 150px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                        }
+                    }
+                }
+
+                .second-row {
+                    height: 220px;
+                    width: 100%;
+
+                    .tech {
+                        .tek {
+                            height: 200px;
+                            background-color: $card-bg;
+                            border-radius: 5px;
+                            margin: 0 1rem;
+                            padding: 1rem 3rem;
+
+                            .subtitle {
+                                font-weight: 600;
+                                font-size: $Paragraph-2;
+
+                                span {
+                                    color: $tags-red;
+                                }
+                            }
+
+                            .icons {
+                                height: 150px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 @keyframes modal__pop {
