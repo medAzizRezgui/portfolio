@@ -7,7 +7,6 @@ import a from '../../assets/b.png'
 import './Home.scss'
 function Home() {
 
-
     return (
 
         <div className="final">
@@ -80,7 +79,7 @@ function Home() {
                                 delivering the most value
 
                             </span>  for
-                            my clients and team mates and gaining as much experience as possible along the way!
+                            my clients and teammates and gaining as much experience as possible along the way!
                         </p>
                     </Item>
 

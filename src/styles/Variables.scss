@@ -1,6 +1,6 @@
 /*================ Mixins ===================*/
 @mixin xsm {
-    @media (max-width: 420px) {
+    @media (max-width: 576px) {
         @content;
     }
 }

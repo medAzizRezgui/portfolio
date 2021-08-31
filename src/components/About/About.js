@@ -36,7 +36,11 @@ function About() {
 
                             easing={'ease'}
                         >
-                            <h2 className="about__text__subtitle">About me</h2>
+                            <div className="about__heading">
+                                <h2 className="about__text__subtitle">About me</h2>
+                                <span className="line"></span>
+                            </div>
+
                         </Item>
 
                         <Item

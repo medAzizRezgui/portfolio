@@ -3,6 +3,10 @@
 .navBar {
     height: 70px;
 
+    @include xsm {
+        margin-bottom: 3rem;
+    }
+
 
     &__container {
         height: 100%;
@@ -14,10 +18,18 @@
             height: 60px;
         }
 
+        .menu-bar {
+            width: 30px;
+        }
+
         .navBar__list {
             display: flex;
             align-items: center;
             gap: 40px;
+
+            @include xsm {
+                display: none;
+            }
 
             .navBar__link {
                 cursor: pointer;

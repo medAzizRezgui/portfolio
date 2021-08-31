@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../assets/Rez..svg'
 import Item from '../Scroll Reveal Item/Item'
+import menu from '../../assets/menu-bar.svg'
 import './NavigationBar.scss'
 function NavigationBar() {
     return (
@@ -17,7 +18,7 @@ function NavigationBar() {
                 >
                     <img src={Logo} alt="" className="navBar__logo" />
                 </Item>
-
+                <img src={menu} alt="" className='menu-bar' />
                 <ul className="navBar__list">
 
                     <Item

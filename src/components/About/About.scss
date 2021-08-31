@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: center;
 
+    @include xsm {
+        height: max-content !important;
+    }
 
 
     .about__container {
@@ -27,6 +30,18 @@
             padding-right: 0 !important;
         }
 
+        @include xsm {
+            padding-top: 2rem !important;
+            justify-content: center;
+
+            text-align: left;
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+            padding-top: 1rem !important;
+            padding-bottom: 3.5rem !important;
+
+        }
+
         .about__content {
             position: relative;
             padding: 5rem 0;
@@ -35,6 +50,12 @@
             justify-content: flex-start;
             height: 100%;
 
+            @include xsm {
+                flex-direction: column;
+                padding-bottom: 0 !important;
+            }
+
+
             .about__text {
                 padding-left: 5rem;
 
@@ -42,12 +63,35 @@
                     padding-left: 0;
                 }
 
-                &__subtitle {
-                    font-family: $Poppins-font;
-                    text-align: left;
+                .about__heading {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-bottom: 3rem;
 
-                    @include xxl {
-                        font-size: $Headline-3;
+                    .about__text__subtitle {
+                        font-family: $Poppins-font;
+                        text-align: left;
+                        flex: 3;
+
+
+                        @include xxl {
+                            font-size: $Headline-3;
+                        }
+
+                        @include xsm {
+                            font-size: $Headline-4;
+                            margin-bottom: 0;
+
+                        }
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 1px;
+                        background-color: white;
+                        flex: 3;
                     }
                 }
 
@@ -62,8 +106,14 @@
                         width: 50%;
                     }
 
+                    @include xsm {
+                        width: 100%;
+                        font-size: 16px;
+                    }
+
                     span {
                         color: $main-cyan;
+
                     }
                 }
             }
@@ -85,6 +135,12 @@
                     top: -10rem;
                 }
 
+                @include xsm {
+                    display: block !important;
+                    position: initial;
+                    width: 250px;
+                    margin-top: 3rem;
+                }
 
                 &:hover {
                     transform: scale(1.1)
