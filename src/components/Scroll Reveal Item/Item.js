@@ -11,6 +11,7 @@ export class RevealMe extends React.Component {
             scale: this.props.scale,
             easing: this.props.easing,
             reset: this.props.reset,
+            mobile: this.props.mobile,
         }
         sr.reveal(this.refs.box1, config)
     }

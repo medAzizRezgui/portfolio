@@ -10,6 +10,8 @@
     align-items: center;
     justify-content: center;
 
+
+
     .about__container {
         text-align: left;
         display: flex;
@@ -19,6 +21,11 @@
         padding-top: 10rem !important;
         padding-bottom: 10rem !important;
         overflow: hidden;
+
+        @include lg {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
 
         .about__content {
             position: relative;
@@ -31,6 +38,9 @@
             .about__text {
                 padding-left: 5rem;
 
+                @include lg {
+                    padding-left: 0;
+                }
 
                 &__subtitle {
                     font-family: $Poppins-font;
@@ -46,6 +56,10 @@
 
                     @include xxl {
                         font-size: $Body;
+                    }
+
+                    @include lg {
+                        width: 50%;
                     }
 
                     span {
@@ -64,6 +78,11 @@
                 @include xl {
                     width: 250px;
                     left: -20rem;
+                }
+
+                @include lg {
+                    left: -30rem;
+                    top: -10rem;
                 }
 
 

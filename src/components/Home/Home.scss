@@ -22,6 +22,11 @@
 
         }
 
+        @include lg {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
         .a {
             width: 600px;
             height: 400px;
@@ -33,6 +38,10 @@
             @include xxl {
                 width: 550px;
                 height: 350px;
+            }
+
+            @include lg {
+                top: 10rem;
             }
 
 
@@ -92,6 +101,10 @@
 
             padding-left: 5rem;
 
+            @include lg {
+                padding-left: 0rem;
+            }
+
             &__small {
                 color: $main-cyan;
                 margin: 0;
@@ -142,6 +155,10 @@
 
                 @include xxl {
                     font-size: $Body
+                }
+
+                @include lg {
+                    width: 40%;
                 }
 
                 span {

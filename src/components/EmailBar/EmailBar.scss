@@ -13,6 +13,10 @@
     opacity: 0;
     animation: slide-in 1s ease 5s forwards;
 
+    @include lg {
+        display: none;
+    }
+
     .bar__email {
         letter-spacing: 0.5px;
         transform: rotate(90deg) translateX(-90px);

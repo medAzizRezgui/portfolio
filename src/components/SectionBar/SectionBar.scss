@@ -11,6 +11,11 @@ $bar-height:500px;
     width: 50px;
     transform-origin: center;
 
+    @include lg {
+        display: none;
+    }
+
+
     .items__container {
         height: $bar-height;
         display: flex;

@@ -20,8 +20,8 @@ function Home() {
                     delay={4200}
                     distance={'500px'}
                     scale={1}
-
                     easing={'ease'}
+                    mobile={false}
                 >
                     <SectionBar active1={true} />
                 </Item>

@@ -10,8 +10,18 @@
     padding-top: 10rem !important;
     position: relative;
 
+    @include lg {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
     .projects {
         padding: 0 5rem !important;
+
+        @include lg {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
 
         .projects__title {
             font-size: 5rem;
