@@ -8,23 +8,45 @@ import projects from '../../assets/setting.png'
 function MobileNav() {
     return (
         <div className="mobilenav__container">
-            <a href="#home">
-                <img src={home} alt="" />
-            </a>
-            <a href="#about">
-                <img src={me} alt="" /></a>
 
-            <a href="#skills">
-                <img src={skills} alt="" />
-            </a>
-            <a href="#projects">
-                <img src={projects} alt="" />
+            <div className="item">
+                <a href="#home">
+                    <img src={home} alt="" />
+                </a>
+                <p>Home</p>
+            </div>
+            <div className="item">
 
-            </a>
-            <a href="#contact">
-                <img src={contact} alt="" />
+                <a href="#about">
+                    <img src={me} alt="" /></a>
+                <p>About</p>
+            </div>
 
-            </a>
+            <div className="item">
+                <a href="#skills">
+                    <img src={skills} alt="" />
+
+                </a>
+                <p>Skills</p>
+            </div>
+
+            <div className="item">
+                <a href="#projects">
+                    <img src={projects} alt="" />
+
+
+                </a>
+                <p>Projects</p>
+            </div>
+            <div className="item">
+
+                <a href="#contact">
+                    <img src={contact} alt="" />
+
+
+                </a>
+                <p>Contact</p>
+            </div>
         </div>
     )
 }

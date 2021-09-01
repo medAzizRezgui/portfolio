@@ -6,16 +6,32 @@
     position: fixed;
     bottom: 0;
     background-color: #1F2833;
-
-
     z-index: 1000;
     border-top-right-radius: 10px;
- border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    img {
-        width: 30px;
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 25px;
+            transform: translateY(3px);
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+}
+
+@media screen and(min-width:756px) {
+    .mobilenav__container {
+        display: none;
     }
 }

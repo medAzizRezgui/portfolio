@@ -18,6 +18,8 @@
         width: 140px;
     }
 
+    @include md {}
+
     img {
         width: 60px;
 

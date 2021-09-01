@@ -21,6 +21,12 @@
         padding-top: 10rem !important;
     }
 
+    @include md {
+        margin-top: 0 !important;
+        padding: 0 2rem !important;
+        padding-top: 10rem !important;
+    }
+
     .projects {
         padding: 0 5rem !important;
 
@@ -38,12 +44,20 @@
             @include xsm {
                 font-size: $Headline-4;
             }
+
+            @include md {
+                font-size: $Headline-4;
+            }
         }
 
         .prow {
             width: 100%;
 
             @include xsm {
+                display: none;
+            }
+
+            @include md {
                 display: none;
             }
 

@@ -11,6 +11,10 @@
         height: max-content !important;
     }
 
+    @include md {
+        height: max-content !important;
+    }
+
     .skills__modal {
         position: fixed;
         left: 0;
@@ -69,6 +73,11 @@
             padding-right: 2rem !important;
         }
 
+        @include md {
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+        }
+
 
         .cor {
             position: absolute;
@@ -76,6 +85,10 @@
             bottom: -5rem;
 
             @include lg {
+                display: none;
+            }
+
+            @include md {
                 display: none;
             }
         }
@@ -97,6 +110,10 @@
                 }
 
                 @include xsm {
+                    gap: 10px;
+                }
+
+                @include md {
                     gap: 10px;
                 }
 
@@ -133,6 +150,10 @@
                     animation: img 1s infinite;
 
                     @include xsm {
+                        display: none;
+                    }
+
+                    @include md {
                         display: none;
                     }
                 }
@@ -187,6 +208,10 @@
                         height: max-content;
                     }
 
+                    @include md {
+                        height: max-content;
+                    }
+
                     .langs {
                         .lang {
                             height: 200px;
@@ -200,6 +225,13 @@
                                 height: max-content;
                                 margin: 1rem 0;
                             }
+
+                            @include md {
+                                padding: 1rem 2rem;
+                                height: max-content;
+                                margin: 1rem 0;
+                            }
+
 
                             .subtitle {
                                 font-weight: 600;
@@ -217,8 +249,17 @@
                                 justify-content: space-between;
 
                                 @include xsm {
-                                    flex-direction: column;
+                                    flex-direction: column !important;
                                     align-items: flex-start;
+                                    height: max-content;
+                                    gap: 20px;
+                                    padding: 2rem 0;
+                                }
+
+                                @include md {
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: space-around;
                                     height: max-content;
                                     gap: 20px;
                                     padding: 2rem 0;
@@ -244,39 +285,7 @@
                                 margin: 1rem 0;
                             }
 
-                            .subtitle {
-                                font-weight: 600;
-                                font-size: $Paragraph-2;
-
-                                span {
-                                    color: $tags-red;
-                                }
-                            }
-
-                            .icons {
-                                height: 150px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                @include xsm {
-                                    height: max-content;
-                                    padding: 2rem 0;
-                                }
-                            }
-
-                        }
-                    }
-
-                    .tools {
-                        .tool {
-                            height: 200px;
-                            background-color: $card-bg;
-                            border-radius: 5px;
-                            margin: 0 1rem;
-                            padding: 1rem 3rem;
-
-                            @include xsm {
+                            @include md {
                                 padding: 1rem 2rem;
                                 height: max-content;
                                 margin: 1rem 0;
@@ -301,6 +310,64 @@
                                     height: max-content;
                                     padding: 2rem 0;
                                 }
+
+                                @include md {
+                                    justify-content: center;
+                                    gap: 20px;
+                                    height: max-content;
+                                    padding: 2rem 0;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .tools {
+                        .tool {
+                            height: 200px;
+                            background-color: $card-bg;
+                            border-radius: 5px;
+                            margin: 0 1rem;
+                            padding: 1rem 3rem;
+
+                            @include xsm {
+                                padding: 1rem 2rem;
+                                height: max-content;
+                                margin: 1rem 0;
+                            }
+
+                            @include md {
+                                padding: 1rem 2rem;
+                                height: max-content;
+                                margin: 1rem 0;
+                            }
+
+                            .subtitle {
+                                font-weight: 600;
+                                font-size: $Paragraph-2;
+
+                                span {
+                                    color: $tags-red;
+                                }
+                            }
+
+                            .icons {
+                                height: 150px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                @include xsm {
+                                    height: max-content;
+                                    padding: 2rem 0;
+                                }
+
+                                @include md {
+                                    justify-content: center;
+                                    gap: 20px;
+                                    height: max-content;
+                                    padding: 2rem 0;
+                                }
                             }
 
                         }
@@ -315,6 +382,10 @@
                         height: max-content;
                     }
 
+                    @include md {
+                        height: max-content;
+                    }
+
                     .tech {
                         .tek {
                             height: 200px;
@@ -324,6 +395,13 @@
                             padding: 1rem 3rem;
 
                             @include xsm {
+                                padding: 1rem 2rem;
+                                height: max-content;
+                                margin: 1rem 0;
+
+                            }
+
+                            @include md {
                                 padding: 1rem 2rem;
                                 height: max-content;
                                 margin: 1rem 0;
@@ -349,8 +427,16 @@
                                     height: max-content;
                                     display: grid;
                                     grid-template-columns: 1fr 1fr;
+                                    column-gap: 10px;
+                                    row-gap: 20px;
+                                    padding: 2rem 0;
+                                }
 
-                                    gap: 30px;
+                                @include md {
+                                    height: max-content;
+
+
+                                    justify-content: space-between;
                                     padding: 2rem 0;
                                 }
                             }

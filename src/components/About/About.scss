@@ -14,6 +14,10 @@
         height: max-content !important;
     }
 
+    @include md {
+        height: max-content !important;
+    }
+
 
     .about__container {
         text-align: left;
@@ -41,6 +45,16 @@
 
         }
 
+        @include md {
+            padding-top: 2rem !important;
+            justify-content: center;
+            text-align: left;
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+            padding-top: 1rem !important;
+            padding-bottom: 3.5rem !important;
+        }
+
         .about__content {
             position: relative;
             padding: 5rem 0;
@@ -54,6 +68,10 @@
                 padding-bottom: 0 !important;
             }
 
+            @include md {
+                flex-direction: column;
+                padding-bottom: 0 !important;
+            }
 
             .about__text {
                 padding-left: 5rem;
@@ -82,7 +100,11 @@
                         @include xsm {
                             font-size: $Headline-4;
                             margin-bottom: 0;
+                        }
 
+                        @include md {
+                            font-size: $Headline-4;
+                            margin-bottom: 0;
                         }
                     }
 
@@ -106,6 +128,11 @@
                     }
 
                     @include xsm {
+                        width: 100%;
+                        font-size: 16px;
+                    }
+
+                    @include md {
                         width: 100%;
                         font-size: 16px;
                     }
@@ -135,6 +162,13 @@
                 }
 
                 @include xsm {
+                    display: block !important;
+                    position: initial;
+                    width: 250px;
+                    margin-top: 3rem;
+                }
+
+                @include md {
                     display: block !important;
                     position: initial;
                     width: 250px;

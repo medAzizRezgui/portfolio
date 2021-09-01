@@ -11,3 +11,9 @@
         }
     }
 }
+
+@media screen and (min-width:756px) {
+    .mobile__projects {
+        display: none;
+    }
+}

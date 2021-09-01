@@ -54,8 +54,9 @@ function Contact() {
 
                     </a>
 
-                </div>           </div>
-            <p className="footer">Designed & Built by rezgui aziz</p>
+                </div>
+
+            </div>
         </>
     )
 }

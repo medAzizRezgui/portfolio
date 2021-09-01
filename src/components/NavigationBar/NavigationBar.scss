@@ -7,6 +7,10 @@
         margin-bottom: 3rem;
     }
 
+    @include md {
+        margin-bottom: 3rem;
+    }
+
 
     &__container {
         height: 100%;
@@ -28,6 +32,10 @@
             gap: 40px;
 
             @include xsm {
+                display: none;
+            }
+
+            @include md {
                 display: none;
             }
 
