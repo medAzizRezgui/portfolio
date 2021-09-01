@@ -1,0 +1,21 @@
+@import '../../styles/Variables.scss';
+
+.mobilenav__container {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #1F2833;
+
+
+    z-index: 1000;
+    border-top-right-radius: 10px;
+ border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        width: 30px;
+    }
+}

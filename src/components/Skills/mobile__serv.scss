@@ -1,0 +1,44 @@
+@import '../../styles/Variables.scss';
+
+
+
+.mobile__services {
+    &__container {
+        @media screen and (min-width:756px) {
+            display: none;
+        }
+
+        .mobile__serv {
+            font-size: $Headline-4;
+            cursor: pointer;
+            text-align: left;
+            font-family: $Poppins-font;
+            margin-bottom: 0;
+            padding: 3rem 0;
+        }
+
+        .mobile__servicesRow {
+            .mobile__servicesCol {
+
+                .mobile__service__card {
+
+                    background-color: $card-bg;
+                    border-radius: 5px;
+                    padding: 2rem 2rem;
+                    display: flex;
+                    margin: 1rem 0;
+                    align-items: center;
+                    justify-content: center;
+
+                    .mobile__service__card__item {
+                        .mobile__service__image {}
+
+                        .mobile__service__text {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

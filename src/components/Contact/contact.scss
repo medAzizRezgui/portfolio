@@ -10,6 +10,36 @@
     margin-top: 20rem !important;
     position: relative;
 
+    @include xsm {
+        margin-top: 5rem !important;
+        flex-direction: column;
+
+        padding: 4rem 2rem !important;
+    }
+
+    .contact__socials {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 5rem 0;
+
+
+
+        a {
+            width: 30px;
+            fill: white;
+        }
+
+        @media screen and (min-width:765px) {
+            .contact__socials {
+                display: none;
+            }
+
+        }
+    }
+
     .contact__text {
         display: flex;
         align-items: center;
@@ -19,6 +49,10 @@
         .contact__title {
             font-family: $Poppins-font;
             margin-bottom: 3rem;
+
+            @include xsm {
+                font-size: $Headline-4;
+            }
         }
 
         .contact__desc {
@@ -26,6 +60,10 @@
             text-align: center;
             margin-bottom: 3rem;
             line-height: 1.7;
+
+            @include xsm {
+                width: 100%;
+            }
 
         }
 

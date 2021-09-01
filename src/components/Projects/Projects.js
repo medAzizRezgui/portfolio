@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import './Projects.scss'
+import './mobileprojects.scss'
 import Item from '../Scroll Reveal Item/Item'
 import SectionBar from '../SectionBar/SectionBar'
 import live from '../../assets/live.png'
 import src from '../../assets/src.png'
 import temp from '../../assets/temp.png'
 import fylo from '../../assets/fylo.png'
+import mobilesnow from '../../assets/mobilesnow.png'
+import mobilehuddle from '../../assets/mobilehuddle.png'
+import mobilefylo from '../../assets/mobilefylo.png'
+import mobilegrid from '../../assets/mobilegrid.png'
 import ProjectDetails from './projectDetails'
 import ProjectDetails1 from './projectDetails1'
 import ProjectDetails2 from './projectDetails2'
@@ -61,14 +66,46 @@ function Projects() {
                                         <img src={src} alt="" />
 
                                     </a>
-
-
-
-
-
-
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mobile__projects">
+                    <div className="row mobile__prow">
+                        <div className="col-12 mobile__pcol">
+
+                            <a href="https://snow-devil-rez.netlify.app" target='_blank'>
+
+                                <img src={mobilesnow} alt="" />
+                            </a>
+
+                        </div>
+                    </div>
+                    <div className="row mobile__prow">
+                        <div className="col-12 mobile__pcol">
+                            <a href="https://fylo-rez.netlify.app" target="_blank" rel="noopener noreferrer">
+                                <img src={mobilefylo} alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="row mobile__prow">
+                        <div className="col-12 mobile__pcol">
+
+                            <a href="https://huddle-rez.netlify.app" target="_blank" rel="noopener noreferrer">
+                                <img src={mobilehuddle} alt="" />
+
+
+                            </a>
+                        </div>
+                    </div>
+                    <div className="row mobile__prow">
+                        <div className="col-12 mobile__pcol">
+                            <a href="https://grid-rez.netlify.app" target="_blank" rel="noopener noreferrer">
+                                <img src={mobilegrid} alt="" />
+                            </a>
+
                         </div>
                     </div>
                 </div>

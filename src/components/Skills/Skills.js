@@ -22,6 +22,7 @@ import seo from '../../assets/seo.svg'
 import ux from '../../assets/ux.svg'
 import res from '../../assets/res.svg'
 import './Skills.scss'
+import './mobile__serv.scss'
 function Skills() {
     const [servSection, setServSection] = useState(false);
 
@@ -165,7 +166,7 @@ function Skills() {
                             <div className="row first-row">
 
 
-                                <div className="col-6 langs">
+                                <div className="col-12 col-md-6 langs">
                                     <div className="lang">
                                         <Item
                                             origin={'top'}
@@ -231,7 +232,7 @@ function Skills() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-3 design">
+                                <div className="col-12 col-md-3 design">
                                     <div className="ds">
                                         <Item
                                             origin={'top'}
@@ -282,7 +283,7 @@ function Skills() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-3 tools">
+                                <div className="col-12 col-md-3 tools">
                                     <div className="tool">
                                         <Item
                                             origin={'top'}
@@ -454,7 +455,65 @@ function Skills() {
                         </Item>
 
                     </div>
+                    <div className="mobile__services">
+                        <div
+                            className="mobile__services__container">
 
+                            <h1 className='mobile__serv'>Services</h1>
+                            <div className="row mobile__servicesRow">
+                                <div className="col-12 mobile__servicesCol">
+
+                                    <div className="mobile__service__card">
+                                        <div className="mobile__service__card__item">
+                                            <img src={seo} alt="" className="mobile__service__image" />
+                                            <p className="mobile__service__text">
+                                                Search Engine Optimization
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className="col-12 mobile__servicesCol">
+
+                                    <div className="mobile__service__card">
+                                        <div className="mobile__service__card__item">
+                                            <img src={site} alt="" className="mobile__service__image" />
+                                            <p className="mobile__service__text">
+                                                Decent and fast web apps
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row mobile__servicesRow">
+                                <div className="col-12 mobile__servicesCol">
+
+                                    <div className="mobile__service__card">
+                                        <div className="mobile__service__card__item">
+                                            <img src={ux} alt="" className="mobile__service__image" />
+                                            <p className="mobile__service__text">
+                                                Interactive Elements
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 mobile__servicesCol">
+
+                                    <div className="mobile__service__card">
+                                        <div className="mobile__service__card__item">
+                                            <img src={res} alt="" className="mobile__service__image" />
+                                            <p className="mobile__service__text">
+                                                Fully responsive design
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
                 </div>
                 <Item
                     origin={'left'}
