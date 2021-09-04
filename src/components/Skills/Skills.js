@@ -295,7 +295,7 @@ function Skills() {
                                         >
                                             <p className="subtitle">
                                                 <span> &lt;/</span>
-                                                Design
+                                                Tools
                                                 <span>
                                                     &gt;
                                                 </span>
